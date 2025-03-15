@@ -16,10 +16,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    appDir: true, // Se estiver usando o novo sistema de diretórios
-    optimizeCss: true, // Mantém a otimização de CSS, se necessário
-  },
 };
 
 mergeConfig(nextConfig, userConfig);
