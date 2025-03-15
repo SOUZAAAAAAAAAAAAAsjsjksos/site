@@ -20,6 +20,7 @@ const nextConfig = {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
+    appDir: true, // Adicione esta linha para habilitar o appDir experimental
   },
 }
 
