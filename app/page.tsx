@@ -13,17 +13,17 @@ export default function Home() {
             <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
               <span className="font-bold text-white">M</span>
             </div>
-            <span className="font-bold text-xl">MistySync</span>
+            <span className="font-bold text-xl">Nexuss Sync</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-white/80 hover:text-white transition-colors">
-              Features
+              Características
             </a>
             <a href="#documentation" className="text-white/80 hover:text-white transition-colors">
-              Documentation
+              Documentação
             </a>
             <a href="#examples" className="text-white/80 hover:text-white transition-colors">
-              Examples
+              Exemplos
             </a>
           </nav>
           <div className="flex items-center gap-3">
@@ -72,21 +72,21 @@ export default function Home() {
 <div className="container mx-auto px-4 relative z-10">
   <div className="max-w-3xl mx-auto text-center">
     <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6 border border-purple-700/50">
-      Powerful Discord Data API
+      Poderosa API de dados do Discord
     </div>
     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400">
-      Misty Sync API
+      Nexuss Sync API
     </h1>
     <p className="text-xl text-white/80 mb-8">
-      Access comprehensive Discord user and guild data with our powerful, reliable API. Built for developers, by developers.
+      Acesse dados abrangentes de usuários e guildas do Discord com nossa API poderosa e confiável. Construído para desenvolvedores, por desenvolvedores.
     </p>
     <div className="flex justify-center">
       <Button
         variant="outline"
         className="border-purple-500 text-purple-300 hover:bg-purple-900/30 px-8 py-6 rounded-xl"
-        onClick={() => window.open('https://your-documentation-link.com', '_blank')}
+        onClick={() => window.open('https://github.com/SOUZAAAAAAAAAAAAAsjsjksos/nexusprofile-discord', '_blank')}
       >
-        View Documentation
+        Ver documentação
       </Button>
     </div>
   </div>
@@ -97,9 +97,9 @@ export default function Home() {
       <section id="features" className="py-20 bg-black/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">API Features</h2>
+            <h2 className="text-3xl font-bold mb-4">API Características</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Our API provides comprehensive access to Discord data with high performance and reliability.
+              Nossa API fornece acesso abrangente aos dados do Discord com alto desempenho e confiabilidade.
             </p>
           </div>
 
@@ -121,9 +121,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">User Data</h3>
+              <h3 className="text-xl font-bold mb-2">Usuários</h3>
               <p className="text-white/70">
-                Access comprehensive user profiles, statuses, activities, and connected accounts.
+                Acesse perfis de usuários abrangentes, status, atividades e contas conectadas.
               </p>
             </div>
 
@@ -144,9 +144,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Guild Data</h3>
+              <h3 className="text-xl font-bold mb-2">Servidores</h3>
               <p className="text-white/70">
-                Retrieve detailed information about Discord servers, members, channels, and roles.
+                Recupere informações detalhadas sobre servidores, membros, canais e funções do Discord.
               </p>
             </div>
 
@@ -162,8 +162,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Real-time Updates</h3>
-              <p className="text-white/70">Get real-time status updates, activity changes, and presence information.</p>
+              <h3 className="text-xl font-bold mb-2">Atualizações em tempo real</h3>
+              <p className="text-white/70">Obtenha atualizações de status em tempo real, alterações de atividades e informações de presença.</p>
             </div>
           </div>
         </div>
@@ -175,27 +175,27 @@ export default function Home() {
     <div className="text-center mb-16">
       <h2 className="text-3xl font-bold mb-4">API Endpoints</h2>
       <p className="text-white/70 max-w-2xl mx-auto">
-        Here are the available endpoints for the MistySync API:
+        Aqui estão os endpoints disponíveis para a API Nexuss:
       </p>
     </div>
 
     <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
-      <h3 className="text-xl font-bold mb-2">User  Endpoint</h3>
+      <h3 className="text-xl font-bold mb-2">Usuários Endpoint</h3>
       <p className="text-white/70 mb-2">
         <code>GET https://nexussapi-production.up.railway.app/user/:userid</code>
       </p>
       <p className="text-white/70">
-        Retrieve information about a specific Discord user by their user ID.
+        Recupere informações sobre um usuário específico do Discord pelo seu ID de usuário.
       </p>
     </div>
 
     <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm mt-4">
-      <h3 className="text-xl font-bold mb-2">Guild Endpoint</h3>
+      <h3 className="text-xl font-bold mb-2">Servidores Endpoint</h3>
       <p className="text-white/70 mb-2">
         <code>GET https://nexussapi-production.up.railway.app/guilds/:guildid</code>
       </p>
       <p className="text-white/70">
-        Retrieve information about a specific Discord guild by its guild ID.
+        Recupere informações sobre uma guilda específica do Discord pelo seu ID de guilda.
       </p>
     </div>
   </div>
@@ -205,9 +205,9 @@ export default function Home() {
       <section id="examples" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Test Our API</h2>
+            <h2 className="text-3xl font-bold mb-4">Testar API</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Try our API right now by entering a Discord user ID below.
+              Experimente nossa API agora mesmo inserindo um ID de usuário do Discord abaixo.
             </p>
           </div>
 
@@ -227,15 +227,15 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-400 mb-2">50ms</div>
-              <div className="text-white/70">Avg. Response Time</div>
+              <div className="text-white/70">Tempo médio de resposta</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-400 mb-2">10M+</div>
-              <div className="text-white/70">API Calls Daily</div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">50</div>
+              <div className="text-white/70">Chamadas de API diárias</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-400 mb-2">5K+</div>
-              <div className="text-white/70">Developers</div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">100</div>
+              <div className="text-white/70">Desenvolvedores</div>
             </div>
           </div>
         </div>
@@ -255,13 +255,13 @@ export default function Home() {
         </div>
         <div className="flex-1 text-center md:text-left">
           <h3 className="text-2xl font-bold mb-2">souzaz</h3>
-          <p className="text-white/70 mb-4">API Developer & Discord Enthusiast</p>
+          <p className="text-white/70 mb-4">Desenvolvedor de API e Entusiasta do Discord</p>
           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
             <a href="https://your-contact-link.com" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white">Contact Me</Button>
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white">Me contate</Button>
             </a>
             <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-900/30">
-              View Projects
+              Ver projetos
             </Button>
           </div>
         </div>
@@ -277,11 +277,11 @@ export default function Home() {
       <div>
         <div className="flex items-center gap-2 mb-4">
           <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
-            <span className="font-bold text-white">M</span>
+            <span className="font-bold text-white">N</span>
           </div>
-          <span className="font-bold text-xl">MistySync</span>
+          <span className="font-bold text-xl">Nexuss Sync</span>
         </div>
-        <p className="text-white/70 mb-4">Powerful Discord data API for developers.</p>
+        <p className="text-white/70 mb-4">API de dados poderosa do Discord para desenvolvedores.</p>
         <div className="flex gap-4">
           <a
             href="https://discord.gg/q6gnTucSpz"
@@ -307,7 +307,7 @@ export default function Home() {
         <ul className="space-y-2 text-white/70">
           <li>
             <a href="#" className="hover:text-white transition-colors">
-              Documentation
+              Documentação
             </a>
           </li>
           <li>
@@ -320,7 +320,7 @@ export default function Home() {
     </div>
 
     <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-      <p>© {new Date().getFullYear()} MistySync API. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Nexuss API. Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>    
@@ -338,7 +338,7 @@ function ApiTester() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!userId.trim()) {
-      setError("Please enter a valid Discord user ID")
+      setError("Insira um ID de usuário válido do Discord")
       return
     }
 
@@ -384,7 +384,7 @@ function ApiTester() {
             />
           </div>
           <Button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white" disabled={isLoading}>
-            {isLoading ? "Loading..." : "Test API"}
+            {isLoading ? "Carregando..." : "Testar API"}
           </Button>
         </form>
 
@@ -401,11 +401,11 @@ function ApiTester() {
         className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
       >
         {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-        {copied ? "Copied!" : "Copy JSON"}
+        {copied ? "Copiado!" : "Copiar JSON"}
       </button>
     </div>
     <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
-      <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
+      <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Resposta</div>
       <div className="p-0 bg-[#0D1117] text-white relative">
         <pre className="p-6 font-mono text-sm overflow-x-auto">
           <code className="language-json">{JSON.stringify(result, null, 2)}</code>
