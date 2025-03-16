@@ -19,7 +19,12 @@ export default function Home() {
             <a href="#features" className="text-white/80 hover:text-white transition-colors">
               Features
             </a>
-            <a href="#documentation" className="text-white/80 hover:text-white transition-colors">
+            <a
+              href="https://your-documentation-link.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors"
+            >
               Documentation
             </a>
             <a href="#examples" className="text-white/80 hover:text-white transition-colors">
@@ -28,13 +33,13 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-  href="https://discord.gg/q6gnTucSpz"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-white/80 hover:text-white transition-colors"
->
-  <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
-</a>
+              href="https://discord.gg/q6gnTucSpz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
+            </a>
             <a
               href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
               target="_blank"
@@ -46,6 +51,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+    </div>
+  )
+}
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
