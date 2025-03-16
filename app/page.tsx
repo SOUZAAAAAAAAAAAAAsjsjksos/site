@@ -460,12 +460,11 @@ function ApiTester() {
       <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
       <div className="p-0 bg-[#0D1117] text-white relative">
         <pre className="p-6 font-mono text-sm overflow-x-auto">
-          <code className="language-javascript">
-            {JSON.stringify(result, null, 2)} {/* Exibe o JSON puro */}
+          <code className="language-json">
+            {JSON.stringify(result, null, 2)}
           </code>
         </pre>
       </div>
     </div>
   </div>
-)}
-
+) }
