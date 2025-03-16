@@ -445,29 +445,27 @@ function ApiTester() {
         )}
 
         {result && (
-          <div className="mt-6">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-semibold">API Response</h3>
-              <button
-                onClick={copyResult}
-                className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
-              >
-                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                {copied ? "Copied!" : "Copy JSON"}
-              </button>
-            </div>
-            <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
-              <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
-              <div className="p-0 bg-[#0D1117] text-white relative">
-                <pre className="p-6 font-mono text-sm overflow-x-auto">
-                  <code className="language-javascript">
-                    {JSON.stringify(result, null, 2)}
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </div>
-        )}
+  <div className="mt-6">
+    <div className="flex items-center justify-between mb-2">
+      <h3 className="text-xl font-semibold">API Response</h3>
+      <button
+        onClick={copyResult}
+        className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
+      >
+        {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+        {copied ? "Copied!" : "Copy JSON"}
+      </button>
+    </div>
+    <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
+      <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
+      <div className="p-0 bg-[#0D1117] text-white relative">
+        <pre className="p-6 font-mono text-sm overflow-x-auto">
+          <code className="language-json">{JSON.stringify(result, null, 2)}</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+)}
       </div>
     </div>
   )
