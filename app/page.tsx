@@ -378,7 +378,7 @@ export default function Home() {
 }
 
 function ApiTester() {
-  const [userId, setUser Id] = useState("")
+  const [userId, setUser Id] = useState("") // Corrigido aqui
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [result, setResult] = useState(null)
@@ -478,4 +478,4 @@ function ApiTester() {
       </div>
     </div>
   )
-            }
+}
