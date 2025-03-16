@@ -28,13 +28,13 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="https://discord.gg/your-server"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              <DiscordIcon className="w-5 h-5" />
-            </a>
+  href="https://discord.gg/your-server"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/80 hover:text-white transition-colors"
+>
+  <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
+</a>
             <a
               href="https://github.com/your-username"
               target="_blank"
