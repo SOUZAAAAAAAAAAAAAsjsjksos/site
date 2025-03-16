@@ -381,7 +381,7 @@ export default function Home() {
 }
 
 function ApiTester() {
-  const [userId, setUser Id] = useState("")
+  const [userId, setUserId] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [result, setResult] = useState(null)
