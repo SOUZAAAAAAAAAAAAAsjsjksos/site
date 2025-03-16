@@ -17,13 +17,13 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-white/80 hover:text-white transition-colors">
-              Features
+              Recursos
             </a>
             <a href="#documentation" className="text-white/80 hover:text-white transition-colors">
-              Documentation
+              Documentação
             </a>
             <a href="#examples" className="text-white/80 hover:text-white transition-colors">
-              Examples
+              Exemplos
             </a>
           </nav>
           <div className="flex items-center gap-3">
@@ -72,22 +72,22 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6 border border-purple-700/50">
-              Powerful Discord Data API
+              API Poderosa de Dados do Discord
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400">
-              Misty Sync API
+              API Misty Sync
             </h1>
             <p className="text-xl text-white/80 mb-8">
-              Access comprehensive Discord user and guild data with our powerful, reliable API. Built for developers, by
-              developers.
+              Acesse dados completos de usuários e guildas do Discord com nossa API poderosa e confiável. Construída por
+              desenvolvedores, para desenvolvedores.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-xl">Get Started</Button>
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-xl">Começar</Button>
               <Button
                 variant="outline"
                 className="border-purple-500 text-purple-300 hover:bg-purple-900/30 px-8 py-6 rounded-xl"
               >
-                View Documentation
+                Ver Documentação
               </Button>
             </div>
           </div>
@@ -98,9 +98,9 @@ export default function Home() {
       <section id="features" className="py-20 bg-black/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">API Features</h2>
+            <h2 className="text-3xl font-bold mb-4">Recursos da API</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Our API provides comprehensive access to Discord data with high performance and reliability.
+              Nossa API fornece acesso completo aos dados do Discord com alta performance e confiabilidade.
             </p>
           </div>
 
@@ -122,9 +122,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">User Data</h3>
+              <h3 className="text-xl font-bold mb-2">Dados do Usuário</h3>
               <p className="text-white/70">
-                Access comprehensive user profiles, statuses, activities, and connected accounts.
+                Acesse perfis de usuários, statuses, atividades e contas conectadas.
               </p>
             </div>
 
@@ -145,9 +145,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Guild Data</h3>
+              <h3 className="text-xl font-bold mb-2">Dados da Guilda</h3>
               <p className="text-white/70">
-                Retrieve detailed information about Discord servers, members, channels, and roles.
+                Obtenha informações detalhadas sobre servidores, membros, canais e cargos do Discord.
               </p>
             </div>
 
@@ -163,8 +163,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Real-time Updates</h3>
-              <p className="text-white/70">Get real-time status updates, activity changes, and presence information.</p>
+              <h3 className="text-xl font-bold mb-2">Atualizações em Tempo Real</h3>
+              <p className="text-white/70">Receba atualizações de status em tempo real, mudanças de atividades e informações de presença.</p>
             </div>
           </div>
         </div>
@@ -174,9 +174,9 @@ export default function Home() {
       <section id="examples" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Test Our API</h2>
+            <h2 className="text-3xl font-bold mb-4">Teste Nossa API</h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Try our API right now by entering a Discord user ID below.
+              Experimente nossa API agora mesmo inserindo um ID de usuário do Discord abaixo.
             </p>
           </div>
 
@@ -192,19 +192,19 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-400 mb-2">99.9%</div>
-              <div className="text-white/70">Uptime</div>
+              <div className="text-white/70">Tempo de Atividade</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-400 mb-2">50ms</div>
-              <div className="text-white/70">Avg. Response Time</div>
+              <div className="text-white/70">Tempo Médio de Resposta</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-400 mb-2">10M+</div>
-              <div className="text-white/70">API Calls Daily</div>
+              <div className="text-white/70">Chamadas de API Diárias</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-400 mb-2">5K+</div>
-              <div className="text-white/70">Developers</div>
+              <div className="text-white/70">Desenvolvedores</div>
             </div>
           </div>
         </div>
@@ -220,11 +220,11 @@ export default function Home() {
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl font-bold mb-2">misss_aubrey</h3>
-                <p className="text-white/70 mb-4">API Developer & Discord Enthusiast</p>
+                <p className="text-white/70 mb-4">Desenvolvedora de API e Entusiasta do Discord</p>
                 <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                  <Button className="bg-purple-600 hover:bg-purple-700 text-white">Contact Me</Button>
+                  <Button className="bg-purple-600 hover:bg-purple-700 text-white">Contate-me</Button>
                   <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-900/30">
-                    View Projects
+                    Ver Projetos
                   </Button>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 </div>
                 <span className="font-bold text-xl">MistySync</span>
               </div>
-              <p className="text-white/70 mb-4">Powerful Discord data API for developers.</p>
+              <p className="text-white/70 mb-4">API poderosa de dados do Discord para desenvolvedores.</p>
               <div className="flex gap-4">
                 <a
                   href="https://discord.gg/your-server"
@@ -270,7 +270,7 @@ export default function Home() {
               <ul className="space-y-2 text-white/70">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Documentation
+                    Documentação
                   </a>
                 </li>
                 <li>
@@ -280,7 +280,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Rate Limits
+                    Limites de Taxa
                   </a>
                 </li>
                 <li>
@@ -292,21 +292,21 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="font-bold mb-4">Resources</h4>
+              <h4 className="font-bold mb-4">Recursos</h4>
               <ul className="space-y-2 text-white/70">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Getting Started
+                    Começando
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Tutorials
+                    Tutoriais
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Examples
+                    Exemplos
                   </a>
                 </li>
                 <li>
@@ -322,17 +322,17 @@ export default function Home() {
               <ul className="space-y-2 text-white/70">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Terms of Service
+                    Termos de Serviço
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Privacy Policy
+                    Política de Privacidade
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Cookie Policy
+                    Política de Cookies
                   </a>
                 </li>
               </ul>
@@ -340,7 +340,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-            <p>© {new Date().getFullYear()} MistySync API. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} MistySync API. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
@@ -358,7 +358,7 @@ function ApiTester() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!userId.trim()) {
-      setError("Please enter a valid Discord user ID")
+      setError("Por favor, insira um ID de usuário do Discord válido")
       return
     }
 
@@ -370,13 +370,13 @@ function ApiTester() {
       const response = await fetch(`https://nexussapi-production.up.railway.app/user/${userId.trim()}`)
 
       if (!response.ok) {
-        throw new Error(`Error: ${response.status} - ${response.statusText || "Failed to fetch user data"}`)
+        throw new Error(`Erro: ${response.status} - ${response.statusText || "Falha ao buscar dados do usuário"}`)
       }
 
       const data = await response.json()
       setResult(data)
     } catch (err) {
-      setError(err.message || "Failed to fetch user data")
+      setError(err.message || "Falha ao buscar dados do usuário")
     } finally {
       setIsLoading(false)
     }
@@ -399,12 +399,12 @@ function ApiTester() {
               type="text"
               value={userId}
               onChange={(e) => setUserId(e.target.value)}
-              placeholder="Enter Discord User ID (e.g., 500383265836892161)"
+              placeholder="Insira o ID do usuário do Discord (ex: 500383265836892161)"
               className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
           </div>
           <Button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white" disabled={isLoading}>
-            {isLoading ? "Loading..." : "Test API"}
+            {isLoading ? "Carregando..." : "Testar API"}
           </Button>
         </form>
 
@@ -415,31 +415,21 @@ function ApiTester() {
         {result && (
           <div className="mt-6">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-semibold">API Response</h3>
+              <h3 className="text-xl font-semibold">Resposta da API</h3>
               <button
                 onClick={copyResult}
                 className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
               >
                 {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                {copied ? "Copied!" : "Copy JSON"}
+                {copied ? "Copiado!" : "Copiar JSON"}
               </button>
             </div>
             <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
-              <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
+              <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Resposta</div>
               <div className="p-0 bg-[#0D1117] text-white relative">
                 <pre className="p-6 font-mono text-sm overflow-x-auto">
-                  <code className="language-javascript" style={{ color: "#d4d4d4" }}>
-                    {JSON.stringify(result, null, 2)
-                      .replace(/"([^"]*)"/g, '<span style="color: #9cdcfe">"$1"</span>')
-                      .replace(/: ("[^"]*")/g, ': <span style="color: #ce9178">$1</span>')
-                      .replace(/: (true|false|null)/g, ': <span style="color: #569cd6">$1</span>')
-                      .replace(/: (\d+)/g, ': <span style="color: #b5cea8">$1</span>')
-                      .split("\n")
-                      .map(
-                        (line, i) =>
-                          `<span class="select-none opacity-50 mr-4">${String(i + 1).padStart(2, " ")}</span>${line}`,
-                      )
-                      .join("\n")}
+                  <code>
+                    {JSON.stringify(result, null, 2)}
                   </code>
                 </pre>
               </div>
@@ -450,4 +440,3 @@ function ApiTester() {
     </div>
   )
 }
-
