@@ -266,116 +266,59 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/40 border-t border-white/10 pt-16 pb-8">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
-                  <span className="font-bold text-white">M</span>
-                </div>
-                <span className="font-bold text-xl">MistySync</span>
-              </div>
-              <p className="text-white/70 mb-4">Powerful Discord data API for developers.</p>
-              <div className="flex gap-4">
-                <a
-  href="https://discord.gg/q6gnTucSpz"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-white/80 hover:text-white transition-colors"
->
-  <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
-</a>
-                <a
-                  href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">API</h4>
-              <ul className="space-y-2 text-white/70">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Endpoints
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Rate Limits
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Changelog
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Resources</h4>
-              <ul className="space-y-2 text-white/70">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Getting Started
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Tutorials
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Examples
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    FAQ
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Legal</h4>
-              <ul className="space-y-2 text-white/70">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Cookie Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
+<footer className="bg-black/40 border-t border-white/10 pt-16 pb-8">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-8 mb-12">
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
+            <span className="font-bold text-white">M</span>
           </div>
-
-          <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-            <p>© {new Date().getFullYear()} MistySync API. All rights reserved.</p>
-          </div>
+          <span className="font-bold text-xl">MistySync</span>
         </div>
-      </footer>
+        <p className="text-white/70 mb-4">Powerful Discord data API for developers.</p>
+        <div className="flex gap-4">
+          <a
+            href="https://discord.gg/q6gnTucSpz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            <Github className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 className="font-bold mb-4">API</h4>
+        <ul className="space-y-2 text-white/70">
+          <li>
+            <a href="#" className="hover:text-white transition-colors">
+              Documentation
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-white transition-colors">
+              Endpoints
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
+      <p>© {new Date().getFullYear()} MistySync API. All rights reserved.</p>
+    </div>
+  </div>
+</footer>    
     </div>
   )
 }
