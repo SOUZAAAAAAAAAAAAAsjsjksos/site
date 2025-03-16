@@ -28,7 +28,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-  href="https://discord.gg/your-server"
+  href="https://discord.gg/q6gnTucSpz"
   target="_blank"
   rel="noopener noreferrer"
   className="text-white/80 hover:text-white transition-colors"
@@ -36,7 +36,7 @@ export default function Home() {
   <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
 </a>
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-white transition-colors"
@@ -279,15 +279,15 @@ export default function Home() {
               <p className="text-white/70 mb-4">Powerful Discord data API for developers.</p>
               <div className="flex gap-4">
                 <a
-                  href="https://discord.gg/your-server"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  <DiscordIcon className="w-5 h-5" />
-                </a>
+  href="https://discord.gg/q6gnTucSpz"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/80 hover:text-white transition-colors"
+>
+  <img src="/images/discord-icon.png" alt="Discord" className="w-5 h-5" />
+</a>
                 <a
-                  href="https://github.com/your-username"
+                  href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
