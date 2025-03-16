@@ -284,7 +284,7 @@ export default function Home() {
   rel="noopener noreferrer"
   className="text-white/80 hover:text-white transition-colors"
 >
-  <img src="/images/discord-icon.png" alt="Discord" className="w-5 h-5" />
+  <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
 </a>
                 <a
                   href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
