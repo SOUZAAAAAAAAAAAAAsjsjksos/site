@@ -380,8 +380,9 @@ export default function Home() {
   )
 }
 
+
 function ApiTester() {
-  const [userId, setUserId] = useState("")
+  const [userId, setUser Id] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [result, setResult] = useState(null)
@@ -430,7 +431,7 @@ function ApiTester() {
             <input
               type="text"
               value={userId}
-              onChange={(e) => setUserId(e.target.value)}
+              onChange={(e) => setUser Id(e.target.value)}
               placeholder="Enter Discord User ID (e.g., 500383265836892161)"
               className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
@@ -445,26 +446,30 @@ function ApiTester() {
         )}
 
         {result && (
-  <div className="mt-6">
-    <div className="flex items-center justify-between mb-2">
-      <h3 className="text-xl font-semibold">API Response</h3>
-      <button
-        onClick={copyResult}
-        className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
-      >
-        {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-        {copied ? "Copied!" : "Copy JSON"}
-      </button>
-    </div>
-    <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
-      <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
-      <div className="p-0 bg-[#0D1117] text-white relative">
-        <pre className="p-6 font-mono text-sm overflow-x-auto">
-          <code className="language-json">
-            {JSON.stringify(result, null, 2)}
-          </code>
-        </pre>
+          <div className="mt-6">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-semibold">API Response</h3>
+              <button
+                onClick={copyResult}
+                className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
+              >
+                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                {copied ? "Copied!" : "Copy JSON"}
+              </button>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
+              <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
+              <div className="p-0 bg-[#0D1117] text-white relative">
+                <pre className="p-6 font-mono text-sm overflow-x-auto">
+                  <code className="language-javascript">
+                    {JSON.stringify(result, null, 2)}
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
-  </div>
-) }
+  )
+}
