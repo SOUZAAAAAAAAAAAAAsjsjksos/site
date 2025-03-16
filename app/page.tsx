@@ -11,7 +11,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center">
-              <span className="font-bold text-white">M</span>
+              <span className="font-bold text-white">N</span>
             </div>
             <span className="font-bold text-xl">Nexuss Sync</span>
           </div>
