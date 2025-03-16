@@ -19,12 +19,7 @@ export default function Home() {
             <a href="#features" className="text-white/80 hover:text-white transition-colors">
               Features
             </a>
-            <a
-              href="https://your-documentation-link.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/80 hover:text-white transition-colors"
-            >
+            <a href="#documentation" className="text-white/80 hover:text-white transition-colors">
               Documentation
             </a>
             <a href="#examples" className="text-white/80 hover:text-white transition-colors">
@@ -33,13 +28,13 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="https://discord.gg/q6gnTucSpz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
-            </a>
+  href="https://discord.gg/q6gnTucSpz"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/80 hover:text-white transition-colors"
+>
+  <img src="/discord-icon.png" alt="Discord" className="w-5 h-5" />
+</a>
             <a
               href="https://github.com/SOUZAAAAAAAAAAAAAsjsjksos"
               target="_blank"
@@ -51,9 +46,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-    </div>
-  )
-}
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
@@ -61,45 +53,44 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a051d]/80 to-[#150a36]/90"></div>
 
         {/* Animated particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {Array.from({ length: 20 }).map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-purple-500 rounded-full animate-pulse"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 7}s`,
-                opacity: Math.random() * 0.5 + 0.2,
-              }}
-            ></div>
-          ))}
-        </div>
+<div className="absolute inset-0 overflow-hidden">
+  {Array.from({ length: 20 }).map((_, i) => (
+    <div
+      key={i}
+      className="absolute w-1 h-1 bg-purple-500 rounded-full animate-pulse"
+      style={{
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+        animationDelay: `${Math.random() * 5}s`,
+        animationDuration: `${3 + Math.random() * 7}s`,
+        opacity: Math.random() * 0.5 + 0.2,
+      }}
+    ></div>
+  ))}
+</div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6 border border-purple-700/50">
-              Powerful Discord Data API
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400">
-              Misty Sync API
-            </h1>
-            <p className="text-xl text-white/80 mb-8">
-              Access comprehensive Discord user and guild data with our powerful, reliable API. Built for developers, by
-              developers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 rounded-xl">Get Started</Button>
-              <Button
-                variant="outline"
-                className="border-purple-500 text-purple-300 hover:bg-purple-900/30 px-8 py-6 rounded-xl"
-              >
-                View Documentation
-              </Button>
-            </div>
-          </div>
-        </div>
+<div className="container mx-auto px-4 relative z-10">
+  <div className="max-w-3xl mx-auto text-center">
+    <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6 border border-purple-700/50">
+      Powerful Discord Data API
+    </div>
+    <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400">
+      Misty Sync API
+    </h1>
+    <p className="text-xl text-white/80 mb-8">
+      Access comprehensive Discord user and guild data with our powerful, reliable API. Built for developers, by developers.
+    </p>
+    <div className="flex justify-center">
+      <Button
+        variant="outline"
+        className="border-purple-500 text-purple-300 hover:bg-purple-900/30 px-8 py-6 rounded-xl"
+        onClick={() => window.open('https://your-documentation-link.com', '_blank')}
+      >
+        View Documentation
+      </Button>
+    </div>
+  </div>
+</div>
       </section>
 
       {/* Features Section */}
