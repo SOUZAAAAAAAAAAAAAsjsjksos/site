@@ -445,41 +445,27 @@ function ApiTester() {
         )}
 
         {result && (
-          <div className="mt-6">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-semibold">API Response</h3>
-              <button
-                onClick={copyResult}
-                className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
-              >
-                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                {copied ? "Copied!" : "Copy JSON"}
-              </button>
-            </div>
-            <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
-              <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
-              <div className="p-0 bg-[#0D1117] text-white relative">
-                <pre className="p-6 font-mono text-sm overflow-x-auto">
-                  <code className="language-javascript" style={{ color: "#d4d4d4" }}>
-                    {JSON.stringify(result, null, 2)
-                      .replace(/"([^"]*)"/g, '<span style="color: #9cdcfe">"$1"</span>')
-                      .replace(/: ("[^"]*")/g, ': <span style="color: #ce9178">$1</span>')
-                      .replace(/: (true|false|null)/g, ': <span style="color: #569cd6">$1</span>')
-                      .replace(/: (\d+)/g, ': <span style="color: #b5cea8">$1</span>')
-                      .split("\n")
-                      .map(
-                        (line, i) =>
-                          `<span class="select-none opacity-50 mr-4">${String(i + 1).padStart(2, " ")}</span>${line}`,
-                      )
-                      .join("\n")}
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </div>
-        )}
+  <div className="mt-6">
+    <div className="flex items-center justify-between mb-2">
+      <h3 className="text-xl font-semibold">API Response</h3>
+      <button
+        onClick={copyResult}
+        className="text-gray-400 hover:text-white p-1 rounded flex items-center gap-1 text-sm"
+      >
+        {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+        {copied ? "Copied!" : "Copy JSON"}
+      </button>
+    </div>
+    <div className="rounded-lg overflow-hidden border border-[#1e1e1e]">
+      <div className="bg-[#1e1e1e] border-b border-[#333] px-4 py-2 text-white">Response</div>
+      <div className="p-0 bg-[#0D1117] text-white relative">
+        <pre className="p-6 font-mono text-sm overflow-x-auto">
+          <code className="language-javascript">
+            {JSON.stringify(result, null, 2)} {/* Exibe o JSON puro */}
+          </code>
+        </pre>
       </div>
     </div>
-  )
-}
+  </div>
+)}
 
