@@ -19,9 +19,6 @@ export default function Home() {
             <a href="#features" className="text-white/80 hover:text-white transition-colors">
               Features
             </a>
-            <a href="#endpoints" className="text-white/80 hover:text-white transition-colors">
-              API Endpoints
-            </a>
             <a href="#documentation" className="text-white/80 hover:text-white transition-colors">
               Documentation
             </a>
@@ -74,7 +71,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6">
+            <div className="inline-block px-3 py-1 bg-purple-900/50 rounded-full text-purple-300 text-sm mb-6 border border-purple-700/50">
               Powerful Discord Data API
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400">
@@ -125,7 +122,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">User  Data</h3>
+              <h3 className="text-xl font-bold mb-2">User Data</h3>
               <p className="text-white/70">
                 Access comprehensive user profiles, statuses, activities, and connected accounts.
               </p>
@@ -173,31 +170,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* API Endpoints Section */}
-      <section id="endpoints" className="py-20 bg-black/20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">API Endpoints</h2>
-            <p className="text-white/70 max-w-2xl mx-auto">
-              Explore os endpoints disponíveis para acessar os dados do Discord.
-            </p>
-          </div>
+      {/* Endpoints Section */}
+<section id="endpoints" className="py-20 bg-black/20">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl font-bold mb-4">API Endpoints</h2>
+      <p className="text-white/70 max-w-2xl mx-auto">
+        Here are the available endpoints for the MistySync API:
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <h3 className="text-xl font-bold mb-2">Obter Dados do Usuário</h3>
-              <p className="text-white/70">GET /user/{`{userId}`}</p>
-              <p className="text-white/70">Retorna informações detalhadas sobre um usuário do Discord.</p>
-            </div>
+    <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
+      <h3 className="text-xl font-bold mb-2">User  Endpoint</h3>
+      <p className="text-white/70 mb-2">
+        <code>GET https://nexussapi-production.up.railway.app/user/:userid</code>
+      </p>
+      <p className="text-white/70">
+        Retrieve information about a specific Discord user by their user ID.
+      </p>
+    </div>
 
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <h3 className="text-xl font-bold mb-2">Obter Dados do Guild</h3>
-              <p className="text-white/70">GET /guilds/{`{guildId}`}</p>
-              <p className="text-white/70">Retorna informações detalhadas sobre um servidor do Discord.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm mt-4">
+      <h3 className="text-xl font-bold mb-2">Guild Endpoint</h3>
+      <p className="text-white/70 mb-2">
+        <code>GET https://nexussapi-production.up.railway.app/guilds/:guildid</code>
+      </p>
+      <p className="text-white/70">
+        Retrieve information about a specific Discord guild by its guild ID.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* API Testing Section */}
       <section id="examples" className="py-20">
@@ -298,12 +301,12 @@ export default function Home() {
               <h4 className="font-bold mb-4">API</h4>
               <ul className="space-y-2 text-white/70">
                 <li>
-                  <a href="#documentation" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-white transition-colors">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="#endpoints" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-white transition-colors">
                     Endpoints
                   </a>
                 </li>
@@ -378,7 +381,7 @@ export default function Home() {
 }
 
 function ApiTester() {
-  const [userId, setUserId] = useState("") // Corrigido aqui
+  const [userId, setUserId] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [result, setResult] = useState(null)
@@ -427,7 +430,7 @@ function ApiTester() {
             <input
               type="text"
               value={userId}
-              onChange={(e) => setUser Id(e.target.value)}
+              onChange={(e) => setUserId(e.target.value)}
               placeholder="Enter Discord User ID (e.g., 500383265836892161)"
               className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
@@ -479,3 +482,4 @@ function ApiTester() {
     </div>
   )
 }
+
