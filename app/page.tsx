@@ -243,27 +243,33 @@ export default function Home() {
       </section>
 
       {/* Profile Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white/5 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-500">
-                <img src="/placeholder.svg?height=96&width=96" alt="Profile" className="w-full h-full object-cover" />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold mb-2">misss_aubrey</h3>
-                <p className="text-white/70 mb-4">API Developer & Discord Enthusiast</p>
-                <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                  <Button className="bg-purple-600 hover:bg-purple-700 text-white">Contact Me</Button>
-                  <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-900/30">
-                    View Projects
-                  </Button>
-                </div>
-              </div>
-            </div>
+<section className="py-16">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto bg-white/5 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+      <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-500">
+          <img
+            src="https://cdn.discordapp.com/avatars/1141824276119429140/c652137cb2feb876fc73704207339a74.webp?size=2048"
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="flex-1 text-center md:text-left">
+          <h3 className="text-2xl font-bold mb-2">souzaz</h3>
+          <p className="text-white/70 mb-4">API Developer & Discord Enthusiast</p>
+          <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <a href="https://your-contact-link.com" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white">Contact Me</Button>
+            </a>
+            <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-900/30">
+              View Projects
+            </Button>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
 <footer className="bg-black/40 border-t border-white/10 pt-16 pb-8">
